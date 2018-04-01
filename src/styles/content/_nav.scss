@@ -1,0 +1,26 @@
+.main-nav {
+    overflow: hidden;
+    min-height: 50rem;
+    max-width: 115.2rem;
+    background-color: $card-color;
+    ul {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: $main-padding;
+        li {
+            margin: {
+                right: $nav-margin;
+                left: $nav-margin;
+                bottom: $nav-margin+$link-padding;
+            }
+            a {
+                display: flex;
+                padding: 0 $link-padding;
+                i {
+                    margin-right: $link-padding;
+                }
+            }
+        }
+    }
+}

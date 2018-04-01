@@ -1,0 +1,9 @@
+.weather {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $weather-width;
+    height: 100%;
+    background-color: $card-color;
+    box-shadow: $card-shadow;
+}
