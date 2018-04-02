@@ -1,7 +1,7 @@
 <template lang="pug">
     #top-bar
         .bar-logo
-        .bar-search
+        form.bar-search
             input.search-form
             button.search-btn
         .bar-weather

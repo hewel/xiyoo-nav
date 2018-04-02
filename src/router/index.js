@@ -9,4 +9,4 @@ export default new Router({
         name: 'Main',
         component: Main
     }]
-})
+});

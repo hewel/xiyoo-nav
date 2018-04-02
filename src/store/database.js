@@ -16,7 +16,7 @@ const menuData = [{
     },
     {
         itemName: 'CSS 工具库',
-        itemSymbol: 'css3',
+        itemSymbol: 'css',
     },
     {
         itemName: 'JS 工具库',
@@ -264,9 +264,9 @@ const linkData = {
 }
 
 
-const dataBase = {
+const database = {
     menuData,
     linkData,
 }
 
-export default dataBase;
+export default database;

@@ -6,20 +6,15 @@
 </template>
 
 <script>
-import dataBase from '@/scripts/database.js';
 export default {
     name: 'Main',
     data() {
         return {
             linkArr: [],
-            demo: false,
         }
     },
-    methods: {
-
-    },
     created() {
-        this.linkArr = dataBase.linkData.movieLinks;
+        this.linkArr = this.$store.state.linkData['movieLinks'];
     }
 }
 </script>
