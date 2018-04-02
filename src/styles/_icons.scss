@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'iconfont';
     /* project id 606855 */
-    src: url('//at.alicdn.com/t/font_606855_6udfz0t01zq41jor.eot');
-    src: url('//at.alicdn.com/t/font_606855_6udfz0t01zq41jor.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_606855_6udfz0t01zq41jor.woff') format('woff'), url('//at.alicdn.com/t/font_606855_6udfz0t01zq41jor.ttf') format('truetype'), url('//at.alicdn.com/t/font_606855_6udfz0t01zq41jor.svg#iconfont') format('svg');
+    src: url('//at.alicdn.com/t/font_606855_7k5awlg9o1or.eot');
+    src: url('//at.alicdn.com/t/font_606855_7k5awlg9o1or.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_606855_7k5awlg9o1or.woff') format('woff'), url('//at.alicdn.com/t/font_606855_7k5awlg9o1or.ttf') format('truetype'), url('//at.alicdn.com/t/font_606855_7k5awlg9o1or.svg#iconfont') format('svg');
 }
 
-i {
+.menu-nav i {
     font-family: 'iconfont';
     font-style:normal;
     -webkit-font-smoothing: antialiased;
@@ -19,8 +19,29 @@ i {
 .menu-movie::before { content: '\e803' }
 .menu-game::before { content: '\e779' }
 .menu-frontend::before { content: '\e7c8' }
+.menu-css3::before { content: '\e7ca' }
+.menu-javascript { content: '\e7c9' }
 .menu-news::before { content: '\e80d' }
 .menu-design::before { content: '\e6e6' }
 .menu-backend::before { content: '\e80e' }
+.menu-tools::before { content: '\e6f3' }
 .menu-about::before { content: '\e648' }
-.icon-default::before { content: '\e6b4 ' }
+
+@font-face {
+    font-family: 'webicon';
+    /* project id 612924 */
+    src: url('//at.alicdn.com/t/font_612924_pkz7hpl2h5hilik9.eot');
+    src: url('//at.alicdn.com/t/font_612924_pkz7hpl2h5hilik9.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_612924_pkz7hpl2h5hilik9.woff') format('woff'), url('//at.alicdn.com/t/font_612924_pkz7hpl2h5hilik9.ttf') format('truetype'), url('//at.alicdn.com/t/font_612924_pkz7hpl2h5hilik9.svg#webicon') format('svg');
+}
+
+.main-nav .icon {
+    font-family: 'webicon';
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    &::before {
+        display: block;
+        color: inherit;
+    }
+}
+.main-nav .icon::before { content: '\e612' }

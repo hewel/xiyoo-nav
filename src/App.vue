@@ -1,16 +1,16 @@
 <template lang="pug">
   #app
+    top-bar
     x-menu
     #content
         router-view
-    .content-box
 </template>
 
 <script>
-    export default {
-        name: 'App',
-        data() {
-            return {}
-        },
-    }
+export default {
+    name: 'App',
+    data() {
+        return {}
+    },
+}
 </script>

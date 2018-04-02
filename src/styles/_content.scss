@@ -1,36 +1,18 @@
 @import "./content/nav";
 @import "./content/weather";
 #content {
+    display: flex;
     flex: auto;
-    position: fixed;
-    overflow: hidden;
-    height: calc(100% - #{$main-padding*2});
-    padding: {
-        left: $content-margin+$weather-width;
-        right: $content-margin+$menu-width;
+    margin: {
+        top: $menu-width+$nav-margin;
+        bottom: $nav-margin;
+        left: $content-margin;
+        right: $content-margin;
     }
-    margin: $main-padding 0;
     z-index: 5;
-    &::before, &::after {
-        content: '';
-        position: fixed;
-        width: calc(100% - #{$content-margin*2+$menu-width+$weather-width});
-        height: $main-padding;
-        background-color: $card-color;
-    }
-    &::before {
-        top: $main-padding;
-    }
-    &::after {
-        bottom: $main-padding;
+    #main {
+        display: flex;
+        flex: auto;
     }
 }
-.content-box {
-    position: fixed;
-    width: calc(100% - #{$content-margin*2+$menu-width+$weather-width});
-    height: calc(100% - #{$main-padding*2});
-    top: $main-padding;
-    left: $content-margin+$weather-width;
-    box-shadow: $card-shadow;
-    z-index: -1;
-}
+

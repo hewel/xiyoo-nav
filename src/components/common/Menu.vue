@@ -1,6 +1,5 @@
 <template lang="pug">
     #menu-side: nav.menu-nav
-        .menu-logo
         ul.menu-list
             li.menu-item(v-for = 'item in menuData', :class = '"js-" + item.itemSymbol')
                 i(:class = '"menu-" + item.itemSymbol')
@@ -16,8 +15,7 @@ export default {
         }
     },
     created() {
-        let menuData = dataBase.menuData;
-        this.menuData = menuData;
+        this.menuData = dataBase.menuData;
         // console.log(menuData);
     }
 }

@@ -1,7 +1,7 @@
 <template lang="pug">
-    a.nav-link(:href = 'linkData.linkHref', :title = 'linkData.linkName')
-        i(:class = 'linkData.linkIcon')
-        span.link-text {{linkData.linkText}}
+    a.nav-link(:href = 'linkData.linkUrl', :title = 'linkData.linkName' target = '_blank')
+        i(:class = '"icon-" + linkData.linkSymbol', class='icon')
+        span.link-text {{linkData.linkName}}
 </template>
 
 <script>
@@ -11,10 +11,9 @@ export default {
             type: Object,
             default() {
                 return {
-                    linkName: '/',
-                    linkHref: '/',
-                    linkIcon: 'icon-default',
-                    linkText: 'default',
+                    linkName: 'Default',
+                    linkSymbol: 'default',
+                    linkUrl: '/',
                 }
             }
         }
