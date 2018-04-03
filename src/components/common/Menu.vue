@@ -4,18 +4,20 @@
             li.menu-item(
                 v-for = '(item, index) in menuData',
                 :class = '"js-" + item.itemSymbol',
-                @click = 'activate(item.itemSymbol)',
+                @click = 'tipClick(item.itemSymbol, $event)',
                 @mouseenter = 'tipHover(item.itemName, $event)',
                 @mouseleave = 'tipOver',
             ): i(:class = '"menu-" + item.itemSymbol')
+        span( class = 'menu-mark', :style = '{top: markTop + "px"}' )
         span(
+            class = 'menu-tip'
             :style = '{top: tipTop + "px"}',
             :class='tipClass',
         ) {{itemName}}
 </template>
 
 <script>
-import { mapState, mapMutations } from 'vuex';
+import { mapState } from 'vuex';
 export default {
     name: 'Menu',
     data() {
@@ -23,6 +25,7 @@ export default {
             itemName: '',
             tipTop: 0,
             tipSwitch: false,
+            markTop: 0,
         }
     },
     computed: {
@@ -32,7 +35,7 @@ export default {
         }
     },
     methods: {
-        ...mapMutations(['activate']),
+        // ...mapMutations(['activate']),
         async tipHover(name, event) {
             this.itemName = await name;
             this.tipTop = await event.path[0].offsetTop;
@@ -40,6 +43,10 @@ export default {
         },
         tipOver() {
             this.tipSwitch = false;
+        },
+        async tipClick(symbol, event) {
+            await this.$store.commit('activate', symbol);
+            this.markTop = await event.path[0].offsetTop;
         }
     },
     created() {

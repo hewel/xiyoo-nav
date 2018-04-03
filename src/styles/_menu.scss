@@ -2,7 +2,7 @@
  * @Author: Hewel
  * @Date: 2018-03-27 17:43:49
  * @Last Modified by: Hewel
- * @Last Modified time: 2018-04-03 17:58:02
+ * @Last Modified time: 2018-04-04 00:40:15
  */
 
 #menu-side {
@@ -12,6 +12,7 @@
     box-shadow: $menu-shadow;
     z-index: 10;
     .menu-nav {
+        position: relative;
         width: 100%;
         margin-top: $menu-width;
         .menu-list .menu-item {
@@ -22,6 +23,11 @@
             font-size: $menu-font-size;
             line-height: $menu-width;
             color: $main-color;
+            transition: 200ms all ease-in-out;
+            &:hover {
+                color: $base-color;
+                background-color: $hover-background-color;
+            }
             i {
                 font-size: $menu-icon-size;
                 margin: 0 $nav-margin;
@@ -30,11 +36,30 @@
                 margin-right: $nav-margin;
             }
         }
-        span {
+        .menu-mark {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: .5rem;
+            height: $menu-width;
+            background-color: $main-color;
+            transition: 200ms all ease-out;
+        }
+        .menu-tip {
             position: absolute;
             left: $menu-width;
             line-height: $menu-width;
+            text-align: center;
+            width: $tip-width;
+            background-color: $card-color;
+            box-shadow: $card-shadow;
             transition: 200ms all ease-out;
+            &.hidden {
+                visibility: hidden;
+            }
+            &::before {
+
+            }
         }
     }
 }

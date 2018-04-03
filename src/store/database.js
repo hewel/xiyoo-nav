@@ -176,11 +176,6 @@ const linkData = {
             linkUrl: 'https://isux.tencent.com/',
         },
         {
-            linkName: 'Tutorialzine',
-            linkSymbol: 'tutorialzine',
-            linkUrl: 'https://tutorialzine.com/',
-        },
-        {
             linkName: '大前端',
             linkSymbol: 'daqianduan',
             linkUrl: 'http://www.daqianduan.com/',
