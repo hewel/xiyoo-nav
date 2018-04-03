@@ -7,7 +7,7 @@ import router from './router';
 //Store
 import store from './store';
 //Scripts
-import _ from 'lodash';
+// import _ from 'lodash';
 import PerfectScrollbar from 'perfect-scrollbar';
 //Components
 import Menu from './components/common/Menu';

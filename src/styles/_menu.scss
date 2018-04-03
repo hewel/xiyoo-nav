@@ -2,20 +2,18 @@
  * @Author: Hewel
  * @Date: 2018-03-27 17:43:49
  * @Last Modified by: Hewel
- * @Last Modified time: 2018-04-02 18:37:35
+ * @Last Modified time: 2018-04-03 17:58:02
  */
 
 #menu-side {
     min-width: $menu-width;
+    flex-basis: $menu-width;
     background-color: $card-color;
     box-shadow: $menu-shadow;
     z-index: 10;
     .menu-nav {
         width: 100%;
-        .menu-logo {
-            height: $menu-width;
-            background-color: #eee;
-        }
+        margin-top: $menu-width;
         .menu-list .menu-item {
             display: flex;
             justify-content: center;
@@ -31,6 +29,12 @@
             span {
                 margin-right: $nav-margin;
             }
+        }
+        span {
+            position: absolute;
+            left: $menu-width;
+            line-height: $menu-width;
+            transition: 200ms all ease-out;
         }
     }
 }

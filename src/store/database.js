@@ -1,7 +1,4 @@
-const menuData = [{
-        itemName: '经常浏览',
-        itemSymbol: 'main',
-    },
+const menuData = [
     {
         itemName: '动画影视',
         itemSymbol: 'movie',
@@ -246,7 +243,7 @@ const linkData = {
             linkUrl: 'https://milligram.io/',
         },
         {
-            linkName: 'Font Awesome',
+            linkName: 'FontAwesome',
             linkSymbol: 'fontawesome',
             linkUrl: 'https://fontawesome.com/',
         },

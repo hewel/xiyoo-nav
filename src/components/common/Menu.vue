@@ -2,30 +2,48 @@
     #menu-side: nav.menu-nav
         ul.menu-list
             li.menu-item(
-                v-for = 'item in menuData',
+                v-for = '(item, index) in menuData',
                 :class = '"js-" + item.itemSymbol',
-                @click = 'activate(item.itemSymbol)'
-            )
-                i(:class = '"menu-" + item.itemSymbol')
+                @click = 'activate(item.itemSymbol)',
+                @mouseenter = 'tipHover(item.itemName, $event)',
+                @mouseleave = 'tipOver',
+            ): i(:class = '"menu-" + item.itemSymbol')
+        span(
+            :style = '{top: tipTop + "px"}',
+            :class='tipClass',
+        ) {{itemName}}
 </template>
 
 <script>
+import { mapState, mapMutations } from 'vuex';
 export default {
     name: 'Menu',
     data() {
         return {
-            menuData: this.$store.state.menuData,
-            jumpSymbol: 'main',
+            itemName: '',
+            tipTop: 0,
+            tipSwitch: false,
+        }
+    },
+    computed: {
+        ...mapState(['menuData']),
+        tipClass() {
+            return this.tipSwitch ? 'show' : 'hidden';
         }
     },
     methods: {
-        activate(symbol) {
-            this.jumpSymbol = symbol;
+        ...mapMutations(['activate']),
+        async tipHover(name, event) {
+            this.itemName = await name;
+            this.tipTop = await event.path[0].offsetTop;
+            this.tipSwitch = await true;
         },
+        tipOver() {
+            this.tipSwitch = false;
+        }
     },
     created() {
-        // this.menuData = dataBase.menuData;
-        // console.log(menuData);
+
     }
 }
 </script>

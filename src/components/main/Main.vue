@@ -6,15 +6,22 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
 export default {
     name: 'Main',
     data() {
         return {
-            linkArr: [],
+
+        }
+    },
+    computed: {
+        ...mapState(['jumpSymbol', 'linkData']),
+        linkArr() {
+            return this.linkData[this.jumpSymbol + 'Links'];
         }
     },
     created() {
-        this.linkArr = this.$store.state.linkData['movieLinks'];
+
     }
 }
 </script>

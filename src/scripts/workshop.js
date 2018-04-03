@@ -5,7 +5,7 @@ function isScrollEnd(el = Document.documentElement, dif = 50, func = Function) {
 }
 
 function elSelect(elName) {
-    let element = {};
+    let element = [];
     switch (typeof(elName)) {
         case 'object':
             element = elName;

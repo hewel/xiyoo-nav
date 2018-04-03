@@ -2,14 +2,36 @@
  * @Author: Hewel
  * @Date: 2018-04-02 12:27:16
  * @Last Modified by: Hewel
- * @Last Modified time: 2018-04-02 12:36:56
+ * @Last Modified time: 2018-04-03 17:06:25
  */
 
  #top-bar {
-     position: fixed;
+     display: flex;
+     position: absolute;
      width: 100%;
      height: $menu-width;
      background: $card-color;
      box-shadow: $card-shadow;
      z-index: 15;
+     .bar-logo {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        color: $main-color;
+        .logo-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: $menu-width;
+            height: $menu-width;
+            margin-right: $content-margin;
+            svg {
+                width: $logo-size;
+                height: $logo-size;
+            }
+        }
+        span {
+            font-size: $menu-font-size;
+        }
+     }
  }

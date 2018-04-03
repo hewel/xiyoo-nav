@@ -4,9 +4,15 @@ import database from './database.js';
 
 Vue.use(Vuex);
 
-export default new Vuex.Store({
-    state: {
-        menuData: database.menuData,
-        linkData: database.linkData,
-    }
-});
+const state = {
+    menuData: database.menuData,
+    linkData: database.linkData,
+    jumpSymbol: 'main',
+};
+const mutations = {
+    activate(state, symbol) {
+        state.jumpSymbol = symbol;
+    },
+};
+
+export default new Vuex.Store({state, mutations});
