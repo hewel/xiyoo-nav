@@ -2,7 +2,7 @@
  * @Author: Hewel
  * @Date: 2018-04-02 12:27:16
  * @Last Modified by: Hewel
- * @Last Modified time: 2018-04-04 15:47:34
+ * @Last Modified time: 2018-04-04 21:13:56
  */
 
 #top-bar {
@@ -36,6 +36,20 @@
         }
         span {
             font-size: $menu-font-size;
+        }
+        span.coding {
+            font-size: 1.2rem;
+            color: #616161;
+            margin-top: .7rem;
+            padding-left: 2rem;
+            a {
+               color: $main-color;
+               font-weight: 500;
+               margin-left: 1rem;
+               &:hover {
+                   color: $base-color;
+               }
+            }
         }
     }
 }

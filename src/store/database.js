@@ -1,3 +1,11 @@
+/* @START: 网站数据库
+ * @Author: Hewel
+ * @Date: 2018-04-04 20:22:57
+ * @Last Modified by: Hewel
+ * @Last Modified time: 2018-04-04 20:50:50
+ */
+
+ //MARK: 标题数据
 const menuData = [{
         itemName: '动画影视',
         itemSymbol: 'movie',
@@ -31,8 +39,9 @@ const menuData = [{
         itemSymbol: 'tools',
     },
 ]
-
+//MARK: 各网站数据
 const linkData = {
+    //MARK: 影视网站
     movieLinks: [{
             linkName: 'BT 之家',
             linkSymbol: 'btbtt',
@@ -109,6 +118,7 @@ const linkData = {
             linkUrl: 'http://www.kamigami.org/',
         },
     ],
+    //MARK: 游戏网站
     gameLinks: [{
             linkName: '游民星空',
             linkSymbol: 'gamersky',
@@ -175,6 +185,7 @@ const linkData = {
             linkUrl: 'http://www.d.cn/',
         },
     ],
+    //MARK: 前端网站
     frontendLinks: [{
             linkName: 'Codrops',
             linkSymbol: 'codrops',
@@ -210,7 +221,28 @@ const linkData = {
             linkSymbol: 'jspang',
             linkUrl: 'http://jspang.com/',
         },
+        {
+            linkName: 'Needn\'t Jq',
+            linkSymbol: 'notneedjq',
+            linkUrl: 'http://youmightnotneedjquery.com/',
+        },
+        {
+            linkName: '菜鸟教程',
+            linkSymbol: 'runoob',
+            linkUrl: 'http://www.runoob.com/',
+        },
+        {
+            linkName: 'WEB 前端开发',
+            linkSymbol: 'css88',
+            linkUrl: 'http://www.css88.com/',
+        },
+        {
+            linkName: 'ECMAScript 6',
+            linkSymbol: 'ecmascript',
+            linkUrl: 'http://es6.ruanyifeng.com/',
+        },
     ],
+    //MARK: 前端工具库
     fronttoolsLinks: [{
             linkName: 'UIkit',
             linkSymbol: 'uikit',
@@ -282,11 +314,6 @@ const linkData = {
             linkUrl: 'https://cn.vuejs.org/',
         },
         {
-            linkName: 'Parcel 中文网',
-            linkSymbol: 'parceljs',
-            linkUrl: 'https://parceljs.org/',
-        },
-        {
             linkName: 'Electron',
             linkSymbol: 'electronjs',
             linkUrl: 'https://electronjs.org/',
@@ -302,21 +329,94 @@ const linkData = {
             linkUrl: 'https://ionicframework.com/',
         },
         {
-            linkName: 'Material icons',
-            linkSymbol: 'materialicons',
-            linkUrl: 'https://material.io/icons/',
+            linkName: 'React',
+            linkSymbol: 'reactjs',
+            linkUrl: 'https://reactjs.org/',
         },
         {
-            linkName: 'Material icons',
-            linkSymbol: 'materialicons',
-            linkUrl: 'https://material.io/icons/',
+            linkName: 'AngularJs',
+            linkSymbol: 'angularjs',
+            linkUrl: 'https://angularjs.org/',
         },
         {
-            linkName: 'Material icons',
-            linkSymbol: 'materialicons',
-            linkUrl: 'https://material.io/icons/',
+            linkName: 'Jquery',
+            linkSymbol: 'jquery',
+            linkUrl: 'http://jquery.com/',
+        },
+        {
+            linkName: 'Flubber',
+            linkSymbol: 'flubber',
+            linkUrl: 'https://github.com/veltman/flubber',
+        },
+        {
+            linkName: 'Driver',
+            linkSymbol: 'driver',
+            linkUrl: 'http://kamranahmed.info/driver',
+        },
+        {
+            linkName: 'Tensorflow',
+            linkSymbol: 'tensorflow',
+            linkUrl: 'https://js.tensorflow.org/',
+        },
+        {
+            linkName: 'Puppeteer',
+            linkSymbol: 'puppeteer',
+            linkUrl: 'https://github.com/GoogleChrome/puppeteer?utm_source=gold_browser_extension',
         },
     ],
+    portalLinks: [
+        {
+            linkName: '知乎',
+            linkSymbol: 'zhihu',
+            linkUrl: 'https://www.zhihu.com/',
+        },
+        {
+            linkName: '掘金',
+            linkSymbol: 'juejin',
+            linkUrl: 'https://juejin.im/',
+        },
+        {
+            linkName: '简书',
+            linkSymbol: 'jianshu',
+            linkUrl: 'https://www.jianshu.com/',
+        },
+        {
+            linkName: '开源中国',
+            linkSymbol: 'oschina',
+            linkUrl: 'https://www.oschina.net/',
+        },
+        {
+            linkName: '少数派',
+            linkSymbol: 'sspai',
+            linkUrl: 'https://sspai.com/',
+        },
+        {
+            linkName: '小专栏',
+            linkSymbol: 'xiaozhuanlan',
+            linkUrl: 'https://xiaozhuanlan.com/',
+        },
+        {
+            linkName: '异次元软件',
+            linkSymbol: 'iplaysoft',
+            linkUrl: 'https://www.iplaysoft.com/',
+        },
+        {
+            linkName: 'IPcfun',
+            linkSymbol: 'ipcfun',
+            linkUrl: 'https://www.ipcfun.com/',
+        },
+        {
+            linkName: '小众软件',
+            linkSymbol: 'appinn',
+            linkUrl: 'https://www.appinn.com/',
+        },
+        {
+            linkName: 'ZD423',
+            linkSymbol: 'zdfans',
+            linkUrl: 'http://www.zdfans.com/',
+        },
+    ],
+    //Mark: 常用网站
     mainLinks: [{
             linkName: '游民星空',
             linkSymbol: 'gamersky',
