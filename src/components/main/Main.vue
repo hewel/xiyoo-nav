@@ -1,8 +1,8 @@
 <template lang="pug">
     #main
-        .weather
         .main-nav
             ul: li(v-for = 'link in linkArr'): x-link(:link-data = 'link')
+        .view-box
 </template>
 
 <script>

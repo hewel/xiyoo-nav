@@ -25,11 +25,11 @@ export default {
             itemName: '',
             tipTop: 0,
             tipSwitch: false,
-            markTop: 0,
+            // markTop: 0,
         }
     },
     computed: {
-        ...mapState(['menuData']),
+        ...mapState(['menuData', 'markTop']),
         tipClass() {
             return this.tipSwitch ? 'show' : 'hidden';
         }
@@ -46,7 +46,7 @@ export default {
         },
         async tipClick(symbol, event) {
             await this.$store.commit('activate', symbol);
-            this.markTop = await event.path[0].offsetTop;
+            await this.$store.commit('moveMark', event.path[0].offsetTop)
         }
     },
     created() {

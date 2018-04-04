@@ -2,22 +2,22 @@
  * @Author: Hewel
  * @Date: 2018-04-02 12:27:16
  * @Last Modified by: Hewel
- * @Last Modified time: 2018-04-03 23:09:17
+ * @Last Modified time: 2018-04-04 15:47:34
  */
 
- #top-bar {
-     display: flex;
-     position: absolute;
-     width: 100%;
-     height: $menu-width;
-     background: $card-color;
-     box-shadow: $card-shadow;
-     z-index: 15;
-     .bar-logo {
-        cursor: pointer;
+#top-bar {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: $menu-width;
+    background: $card-color;
+    box-shadow: $card-shadow;
+    z-index: 15;
+    .bar-logo {
         display: flex;
         align-items: center;
         .logo-img {
+            cursor: pointer;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -37,5 +37,5 @@
         span {
             font-size: $menu-font-size;
         }
-     }
- }
+    }
+}
