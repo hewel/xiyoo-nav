@@ -2,7 +2,7 @@
  * @Author: Hewel
  * @Date: 2018-04-04 20:22:57
  * @Last Modified by: Hewel
- * @Last Modified time: 2018-04-05 12:41:03
+ * @Last Modified time: 2018-04-05 19:09:33
  */
 
  //MARK: 标题数据
@@ -414,6 +414,81 @@ const linkData = {
             linkName: 'ZD423',
             linkSymbol: 'zdfans',
             linkUrl: 'http://www.zdfans.com/',
+        },
+        {
+            linkName: '中关村在线',
+            linkSymbol: 'zol',
+            linkUrl: 'http://www.zol.com.cn/',
+        },
+        {
+            linkName: '太平洋电脑网',
+            linkSymbol: 'pconline',
+            linkUrl: 'http://www.pconline.com.cn/',
+        },
+        {
+            linkName: 'ZEALER',
+            linkSymbol: 'zealer',
+            linkUrl: 'http://www.zealer.com/',
+        },
+        {
+            linkName: '即刻',
+            linkSymbol: 'okjike',
+            linkUrl: 'https://web.okjike.com/',
+        },
+        {
+            linkName: '网易',
+            linkSymbol: 'netsease',
+            linkUrl: 'http://www.163.com/',
+        },
+        {
+            linkName: '腾讯',
+            linkSymbol: 'qq',
+            linkUrl: 'http://www.qq.com/',
+        },
+        {
+            linkName: '老男人',
+            linkSymbol: 'laonanren',
+            linkUrl: 'https://www.laonanren.com/',
+        },
+        {
+            linkName: '暴走漫画',
+            linkSymbol: 'baozoumanhua',
+            linkUrl: 'http://baozoumanhua.com/',
+        },
+        {
+            linkName: '今日头条',
+            linkSymbol: 'toutiao',
+            linkUrl: 'https://www.toutiao.com/',
+        },
+        {
+            linkName: '虎嗅网',
+            linkSymbol: 'huxiu',
+            linkUrl: 'https://www.huxiu.com/',
+        },
+        {
+            linkName: '凤凰网',
+            linkSymbol: 'ifeng',
+            linkUrl: 'http://www.ifeng.com/',
+        },
+        {
+            linkName: '天涯社区',
+            linkSymbol: 'tianya',
+            linkUrl: 'http://www.tianya.cn/',
+        },
+        {
+            linkName: '新浪新闻',
+            linkSymbol: 'sina',
+            linkUrl: 'http://news.sina.com.cn/',
+        },
+        {
+            linkName: '环球网',
+            linkSymbol: 'huanqiu',
+            linkUrl: 'http://www.huanqiu.com/',
+        },
+        {
+            linkName: '澎湃新闻',
+            linkSymbol: 'thepaper',
+            linkUrl: 'http://www.thepaper.cn/',
         },
     ],
     //Mark: 常用网站
