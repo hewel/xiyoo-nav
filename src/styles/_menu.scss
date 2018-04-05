@@ -14,26 +14,19 @@
     .menu-nav {
         position: relative;
         width: 100%;
-        padding-top: $menu-width;
+        padding-top: $menu-margin-top;
         .menu-list .menu-item {
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            font-size: $menu-font-size;
-            line-height: $menu-width;
+            font-size: $menu-icon-size;
+            line-height: $menu-item-line-height;
             color: $main-color;
             transition: 200ms all ease-in-out;
             &:hover {
                 color: $base-color;
                 background-color: $hover-background-color;
-            }
-            i {
-                font-size: $menu-icon-size;
-                margin: 0 $nav-margin;
-            }
-            span {
-                margin-right: $nav-margin;
             }
         }
         .menu-mark {
@@ -41,14 +34,14 @@
             left: 0;
             top: 0;
             width: .5rem;
-            height: $menu-width;
+            height: $menu-item-line-height;
             background-color: $main-color;
             transition: 200ms all ease-out;
         }
         .menu-tip {
             position: absolute;
             left: $menu-width;
-            line-height: $menu-width;
+            line-height: $menu-item-line-height;
             text-align: center;
             width: $tip-width;
             background-color: $card-color;
@@ -57,9 +50,9 @@
             &.hidden {
                 visibility: hidden;
             }
-            &::before {
+            // &::before {
 
-            }
+            // }
         }
     }
 }

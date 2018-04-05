@@ -2,14 +2,14 @@
  * @Author: Hewel
  * @Date: 2018-04-02 12:27:16
  * @Last Modified by: Hewel
- * @Last Modified time: 2018-04-04 21:13:56
+ * @Last Modified time: 2018-04-05 14:06:32
  */
 
 #top-bar {
     display: flex;
     position: absolute;
     width: 100%;
-    height: $menu-width;
+    height: $bar-height;
     background: $card-color;
     box-shadow: $card-shadow;
     z-index: 15;
@@ -22,8 +22,8 @@
             justify-content: center;
             align-items: center;
             width: $menu-width;
-            height: $menu-width;
-            margin-right: $content-margin;
+            height: $bar-height;
+            margin-right: $content-margin-row;
             color: $main-color;
             transition: 200ms color ease-in-out;
             &:hover {
@@ -35,17 +35,17 @@
             }
         }
         span {
-            font-size: $menu-font-size;
+            font-size: $logo-font-size;
         }
-        span.coding {
+        span.hewel {
             font-size: 1.2rem;
-            color: #616161;
+            color: $font-color-light;
             margin-top: .7rem;
-            padding-left: 2rem;
+            padding-left: $title-margin-right;
             a {
                color: $main-color;
                font-weight: 500;
-               margin-left: 1rem;
+               margin-left: .6rem;
                &:hover {
                    color: $base-color;
                }

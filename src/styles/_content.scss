@@ -1,13 +1,13 @@
 @import "./content/nav";
-@import "./content/weather";
+@import "./content/view";
 #content {
     display: flex;
     flex: auto;
     margin: {
-        top: $menu-width+$nav-margin;
-        bottom: $nav-margin;
-        left: $content-margin;
-        right: $content-margin;
+        top: $bar-height + $content-margin-column;
+        bottom: $content-margin-column;
+        left: $content-margin-row;
+        right: $content-margin-row;
     }
     z-index: 5;
     #main {

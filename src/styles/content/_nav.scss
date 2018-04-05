@@ -6,17 +6,17 @@
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
-        padding: $main-padding;
+        padding: $main-padding-column $main-padding-row;
         li {
             margin: {
-                bottom: $nav-margin+$link-padding;
+                bottom: $link-margin-bottom;
             }
             flex-basis: $link-width;
             a {
                 display: flex;
-                padding: 0 $link-padding;
+                padding: 0 $link-padding-row;
                 i {
-                    margin-right: $link-padding;
+                    margin-right: $link-icon-margin-right;
                 }
             }
         }

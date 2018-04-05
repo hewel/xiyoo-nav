@@ -2,7 +2,7 @@
  * @Author: Hewel
  * @Date: 2018-03-28 08:09:04
  * @Last Modified by: Hewel
- * @Last Modified time: 2018-04-03 20:58:04
+ * @Last Modified time: 2018-04-05 14:09:15
  */
 
 html {
@@ -17,10 +17,16 @@ body {
     line-height: 2.4em;
     background-color: $body-background-color;
 }
-
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
 a {
     text-decoration: none;
     color: $link-color;
+    transition: color 200ms ease-in-out;
+    &:hover {
+        color: $main-color;
+    }
 }
 
 ul {
@@ -67,7 +73,7 @@ li {
 }
 
 .ps__rail-y {
-    right: $content-margin+$menu-width !important;
+    // right: $content-margin-row + $menu-width !important;
     width: $shrink-scrollBar-width;
     padding-left: $unfold-scrollBar-width;
     &:hover,

@@ -2,7 +2,7 @@
  * @Author: Hewel
  * @Date: 2018-03-27 17:09:28
  * @Last Modified by: Hewel
- * @Last Modified time: 2018-04-04 15:38:11
+ * @Last Modified time: 2018-04-05 13:20:40
  */
 
 //Mark: Here are the color values
@@ -13,7 +13,8 @@ $hover-background-color: #eceff1;
 $base-color: #3dc1ff;
 $main-color: #00b7e5;
 $font-color: #34495e;
-$link-color: #2f4d4f;
+$font-color-light: #666d6e;
+$link-color: #314d58;
 $scrollBar-color: #d4d8db;
 $hover-scrollBar-color: #c5ccd1;
 $box-shadow-color: rgba(96, 125, 139, 0.16);
@@ -25,17 +26,24 @@ $card-shadow: 0 1px 6px 0px $box-shadow-color;
 //MARK: Here are the length values
 $unfold-scrollBar-width: 1.6rem;
 $shrink-scrollBar-width: .4rem;
-$logo-size: 4rem;
 $menu-width: 6.4rem;
-$top-height: 12.8rem;
-$main-padding: 3.2rem;
-$nav-margin: 2rem;
-$content-margin: 2.4rem;
-$view-box-width: 44rem;
-$link-padding: 1.6rem;
+$menu-margin-top: $menu-width;
+$menu-item-line-height: $menu-width;
+$bar-height: $menu-width;
+$main-padding-row: 4rem;
+$main-padding-column: 3.2rem;
+$content-margin-row: 2.4rem;
+$content-margin-column: 2rem;
+$link-padding-row: 1.6rem;
+$link-margin-bottom: 4.8rem;
+$link-icon-margin-right: $link-padding-row;
 $link-width: 16.8rem;
 $tip-width: 10.4rem;
+$view-box-width: 44rem;
+$logo-size: 4rem;
+$title-margin-right: $link-padding-row;
 
 //MARK: Here are the font sizes
 $menu-font-size: 2rem;
 $menu-icon-size: $menu-font-size + .4rem;
+$logo-font-size: $menu-font-size;
